@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<div class="container ">
+    <div class="row mt-5 justify-content-center">
+        <div class="col-3 search">
+                  <form role="search">
+                    <div class="input">
+                      <input type="text" id="myinput" class="form-control" placeholder="Имя сервиса">
+                    </div>
+                  </form>
+        </div>
+        <div class="col-2 sort">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Сортировать
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button" onclick="sortTable(0)">По имени</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="sortTable(2)">По статусу</button></li>
+                </ul>
+              </div>
+        </div>  
+    </div>
+
+</div>
+
+<div class="container">
+  <div class="mx-auto mt-3" id="donutchart"></div>
+  
+  <div class="mx-auto" id="viewData"></div>  
+</div>
+   
+<script src="../scripts/script.js"></script>
+
+</body>
+</html>

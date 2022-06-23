@@ -1,0 +1,24 @@
+
+#viewData tr.header, #viewData tr:hover {
+    /* Добавить серый цвет фона для заголовка таблицы и при наведении курсора мыши */
+    background-color: #f1f1f1;
+    
+}
+
+  .marg{
+      margin-left:100px;
+  }
+
+  #donutchart{
+    width: 400px;
+     height: 200px;
+    
+  }
+
+  /* .search{
+      margin-left: auto;
+  }
+
+  .sort{
+      margin-right: auto;
+  } */
